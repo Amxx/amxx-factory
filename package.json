@@ -1,6 +1,9 @@
 {
   "name": "@amxx/factory",
   "version": "1.0.0",
+  "description": "Factories for crosschain counterfactual deployments",
+  "author": "Hadrien Croubois (@Amxx)",
+  "license": "MIT",
   "files": [
     "/artifacts/contracts/**/*.json",
     "!/artifacts/contracts/**/*.dbg.json",
