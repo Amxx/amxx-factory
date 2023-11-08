@@ -15,6 +15,13 @@
     "test": "hardhat test",
     "generate": "hardhat run scripts/generate.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amxx/amxx-factory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Amxx/amxx-factory/issues"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^3.0.4",
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
