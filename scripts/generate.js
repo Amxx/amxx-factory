@@ -4,6 +4,8 @@ const path       = require('path');
 
 require('dotenv').config();
 
+const OUTPUT = "./deployments";
+
 (async () => {
   const signer = new ethers.Wallet(process.env.PK);
 
@@ -38,8 +40,8 @@ require('dotenv').config();
       )
     )
     .then(details => {
-      fs.mkdirSync('generated', { recursive: true });
-      fs.writeFileSync(path.join('generated', name + '.json'), JSON.stringify(details));
+      fs.mkdirSync(OUTPUT, { recursive: true });
+      fs.writeFileSync(path.join(OUTPUT, name + '.json'), JSON.stringify(details));
     });
   }
 })().catch(console.error);

@@ -1,7 +1,16 @@
 {
+  "name": "@amxx/factory",
+  "version": "1.0.0",
+  "files": [
+    "/artifacts/contracts/**/*.json",
+    "!/artifacts/contracts/**/*.dbg.json",
+    "/contracts/**/*.sol",
+    "/deployments/*.json"
+  ],
   "scripts": {
     "compile": "hardhat compile",
-    "test": "hardhat test"
+    "test": "hardhat test",
+    "generate": "hardhat run scripts/generate.js"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^3.0.4",

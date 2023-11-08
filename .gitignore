@@ -1,7 +1,7 @@
 .env
 artifacts/
 cache/
-generated/
+deployments/
 node_modules/
 
 legacy
